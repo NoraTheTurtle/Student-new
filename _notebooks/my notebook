@@ -1,6 +1,6 @@
 NOTES
 
-- cd vscode/nora/nora and make to create new server - http://0.0.0.0:4200/nora/
+- cd vscode/nora/nora and make to create new server - http://127.0.0.1:4200/nora/
 - Always create and update README.md (update and explain things about your site/blog)
 - index.mb is always main homepage
 - NEVER commit a file you did not code/create
@@ -8,7 +8,7 @@ NOTES
 PROGRESS WEEK BY WEEK:
 week 0 coding in all of the files, making teacher/student directory and coding in all of the nessesary files (had trouble making new repository on github/cloning it)
 
-week 1 making new repository on github and coding my index.mb page.  Learned how to change theme and add images (had trouble commiting changes)
+week 1 making new repository on github and coding my index.mb page.  Learned how to change theme and add images (had trouble commiting changes) (had to make a "personal token" on github to get acsess)
 
 password to commit:
 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
