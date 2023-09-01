@@ -2,18 +2,24 @@
 toc: true
 comments: false
 layout: post
-title: More Detail Plan
-description: Example Plan!!! Analyze hacks and plan.
+title: Daily Plans week 1
+description: Daily plans for week 1.  Analyzing hacks, planing blog, making blog
 type: plans
 courses: { compsci: {week: 1} }
 ---
 
-### PBL Unit 1 / Week 1
-Learning outcome. Building a personal and running GitHub Pages.
-- Monday: Schedule Live Review - 4 minutes. Finish Tools setup. Attend Office Hours on HTML, CSS, JS and Student Blog.
-- Tuesday: Read [Markdown Student Page](https://nighthawkcoders.github.io/teacher//c4.3/c5.0/2023/08/17/markdown-html_fragments.html), Attend Office Hours on Updating Home Page and Plan Page.
-- Wednesday: Work Plan Page and Home Page.  Prep with pair on live review.
-- Thursday: 10:45 live review per Canvas.  Read [Linux Shell and Bash](https://nighthawkcoders.github.io/teacher//5.a/c4.1/2023/08/16/linux_shell_IPYNB_2_.html).  Tranfer blog and customize for my lab notebook.
+### Unit 1 / Week 1
+monday - making new teacher/student repository on github and cloning it into vs code. (was not working)
+
+tuesday - had strugles with cloning and using the repositories but got it fixed by asking teachers/peers and figuring out to fork the repository to have acsess
+
+wenesday - Learning that index.md is the homepage.  asking and searching how to code using markdown.  starting to change theme and persoalize blog
+
+thursday - learning to add images and how to resize them to prefered size (could not get commits to work)
+
+friday - creating token to fix commiting problem and fixing up blog!
+
+Learning outcome: learned how to code in markdown,  how to change the theme off the webpage, and how to make and use token (solving problem with commits!)
 
 
 ### Pair Planning Meeting
