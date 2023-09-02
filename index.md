@@ -4,7 +4,9 @@ title: Nora's Blog
 ---
 
 # Nora's Blog Homepage
-<img src="https://drive.googlecom/filed19xK5hti6d_pnh5zuuAPr7fvVbtkSQ-2a/view?usp=drive_link">
+<img src="images/The Code Mode Gang.png" width="400" height="340" >
+
+###### Me and the code gang --> Nora, soni & varnika
 
 
 ### a little bit about me
