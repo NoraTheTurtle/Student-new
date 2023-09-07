@@ -67,7 +67,7 @@ courses: { compsci: {week: 2} }
     }
 
     #setting input:checked + label{
-        background-color: #f05d6f;
+        background-color: #57ff8f;
         color: #FFFFFF;
     }
 </style>
@@ -80,13 +80,13 @@ courses: { compsci: {week: 2} }
     <div class="container bg-secondary" style="text-align:center;">
         <!-- Main Menu -->
         <div id="menu" class="py-4 text-light">
-            <p>Welcome to Snake, press  <span style="background-color: #f05d6f; color: #FFFFFF">space</span> to begin</p>
+            <p>Welcome to Snake, press  <span style="background-color: #4aff7d; color: #FFFFFF">space</span> to begin</p>
             <a id="new_game" class="link-alert">new game</a>
             <a id="setting_menu" class="link-alert">settings</a>
         </div>
         <!-- Game Over -->
         <div id="gameover" class="py-4 text-light">
-            <p>Game Over, press <span style="background-color: #f05d6f; color: #FFFFFFF">space</span> to try again</p>
+            <p>Game Over, press <span style="background-color: #4aff7d; color: #4aff7d">space</span> to try again</p>
             <a id="new_game1" class="link-alert">new game</a>
             <a id="setting_menu1" class="link-alert">settings</a>
         </div>
@@ -94,7 +94,7 @@ courses: { compsci: {week: 2} }
         <canvas id="snake" class="wrap" width="320" height="320" tabindex="1"></canvas>
         <!-- Settings Screen -->
         <div id="setting" class="py-4 text-light">
-            <p>Settings Screen, press <span style="background-color: #f05d6f; color: #FFFFFF">space</span> to go back to playing</p>
+            <p>Settings Screen, press <span style="background-color: #4aff7d; color: #FFFFFF">space</span> to go back to playing</p>
             <a id="new_game2" class="link-alert">new game</a>
             <br>
             <p>Speed:
@@ -272,7 +272,7 @@ courses: { compsci: {week: 2} }
             }
             // Repaint canvas
             ctx.beginPath();
-            ctx.fillStyle = "DarkSalmon";
+            ctx.fillStyle = "DarkGreen";
             ctx.fillRect(0, 0, canvas.width, canvas.height);
             // Paint snake
             for(let i = 0; i < snake.length; i++){
@@ -311,19 +311,19 @@ courses: { compsci: {week: 2} }
         let changeDir = function(key){
             // test key and switch direction
             switch(key) {
-                case 37:    // left arrow
+                case 65:    // left arrow
                     if (snake_dir !== 1)    // not right
                         snake_next_dir = 3; // then switch left
                     break;
-                case 38:    // up arrow
+                case 87:    // up arrow
                     if (snake_dir !== 2)    // not down
                         snake_next_dir = 0; // then switch up
                     break;
-                case 39:    // right arrow
+                case 68:    // right arrow
                     if (snake_dir !== 3)    // not left
                         snake_next_dir = 1; // then switch right
                     break;
-                case 40:    // down arrow
+                case 83:    // down arrow
                     if (snake_dir !== 0)    // not up
                         snake_next_dir = 2; // then switch down
                     break;
@@ -331,9 +331,20 @@ courses: { compsci: {week: 2} }
         }
         /* Dot for Food or Snake part */
         /////////////////////////////////////////////////////////////
+
         let activeDot = function(x, y){
-            ctx.fillStyle = "#FFFFFF";
-            ctx.fillRect(x * BLOCK, y * BLOCK, BLOCK, BLOCK);
+            ctx.fillStyle = "#d41717";
+            ctx.beginPath();
+            ctx. arc(x * BLOCK + BLOCK / 2, y * BLOCK + BLOCK / 2, BLOCK / 2, 0, 2 * Math.PI);
+            ctx.fill();
+
+////apple train code
+            //const appleSize = BLOCK;
+            //const appleX = x * BLOCK;
+            //const appleY = y * BLOCK;
+            //ctx.font = `${appleSize}px sans-serif`;
+            //ctx.fillText(":🍎:", appleX, appleY + appleSize);
+        
         }
         /* Random food placement */
         /////////////////////////////////////////////////////////////
@@ -367,8 +378,8 @@ courses: { compsci: {week: 2} }
         /////////////////////////////////////////////////////////////
         let setWall = function(wall_value){
             wall = wall_value;
-            if(wall === 0){screen_snake.style.borderColor = "#606060";}
-            if(wall === 1){screen_snake.style.borderColor = "#CD5C5C";}
+            if(wall === 0){screen_snake.style.borderColor = "#2edb5f";}
+            if(wall === 1){screen_snake.style.borderColor = "#2edb5f";}
         }
     })();
 </script>
