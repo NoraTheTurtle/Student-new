@@ -2,10 +2,10 @@
 toc: true
 comments: true
 layout: post
-title:  strugles and accomplisments (0-2)
-description: Example Review Ticket!!! This will help us communicate results.
+title:  strugles and accomplisments 3
+description: what i strugled with/accomplished and how i met my goals!
 type: tangibles
-courses: { compsci: {week: 0} }
+courses: { compsci: {week: 3} }
 ---
 
 ## Summary of my Accomplishments (week 3)
