@@ -80,13 +80,13 @@ courses: { compsci: {week: 2} }
     <div class="container bg-secondary" style="text-align:center;">
         <!-- Main Menu -->
         <div id="menu" class="py-4 text-light">
-            <p>Welcome to Snake, press  <span style="background-color: #4aff7d; color: #FFFFFF">space</span> to begin</p>
+            <p>Welcome to Snake, press  <span style="background-color: #FFFFFF; color: #FFFFFF">space</span> to begin</p>
             <a id="new_game" class="link-alert">new game</a>
             <a id="setting_menu" class="link-alert">settings</a>
         </div>
         <!-- Game Over -->
         <div id="gameover" class="py-4 text-light">
-            <p>Game Over, press <span style="background-color: #4aff7d; color: #4aff7d">space</span> to try again</p>
+            <p>Game Over, press <span style="background-color: #FFFFFF; color: #FFFFFF">space</span> to try again</p>
             <a id="new_game1" class="link-alert">new game</a>
             <a id="setting_menu1" class="link-alert">settings</a>
         </div>
@@ -333,7 +333,7 @@ courses: { compsci: {week: 2} }
         /////////////////////////////////////////////////////////////
 
         let activeDot = function(x, y){
-            ctx.fillStyle = "#d41717";
+            ctx.fillStyle = "#FFFFFF";
             ctx.beginPath();
             ctx. arc(x * BLOCK + BLOCK / 2, y * BLOCK + BLOCK / 2, BLOCK / 2, 0, 2 * Math.PI);
             ctx.fill();
