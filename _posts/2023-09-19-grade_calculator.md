@@ -5,7 +5,7 @@ hide: true
 layout: default
 description: grade calculator.  find average of your scores
 courses: { compsci: {week: 5} }
-type: tangibles
+type: hacks
 ---
 
 <!-- Help Message -->

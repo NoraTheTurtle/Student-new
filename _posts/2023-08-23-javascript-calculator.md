@@ -3,7 +3,7 @@ title: JS Calculator
 comments: true
 hide: true
 layout: default
-type: tangibles
+type: hacks
 description: working calculator to find sum of diffrent numbers
 courses: { compsci: {week: 4} }
 ---
