@@ -42,6 +42,9 @@ type: hacks
         const FRAME_LIMIT = 3; // matches number of frames per sprite row, this code assume each row is same
        // const FRAME_RATE = 4;  // Change this value to adjust the frame rate (frames per second)
         const SCALE_FACTOR = 3;  // control size of sprite on canvas
+        const DESIRED_FRAME_RATE = 7; // 1 frames per second
+        const FRAME_INTERVAL = 1000 / DESIRED_FRAME_RATE;
+
         canvas.width = SPRITE_WIDTH * SCALE_FACTOR;
         canvas.height = SPRITE_HEIGHT * SCALE_FACTOR;
 
@@ -51,6 +54,8 @@ type: hacks
                 this.x = 0;
                 this.y = 0;
                 this.minFrame = 0;
+                this.frameY = 0;
+                this.frameX = 0;
                 this.maxFrame = FRAME_LIMIT;
                 this.frameX = 0;
                 this.frameY = 0;
@@ -117,18 +122,25 @@ type: hacks
             }
         });
 
+        let lastTimestamp = 0;
+
         // Animation recursive control function
-        function animate() {
-            // Clears the canvas to remove the previous frame.
-            ctx.clearRect(0, 0, canvas.width, canvas.height);
+        function animate(timestamp) {
+            const deltaTime = timestamp - lastTimestamp;
+            if (deltaTime >= FRAME_INTERVAL) {
+                // Clears the canvas to remove the previous frame.
+                ctx.clearRect(0, 0, canvas.width, canvas.height);
 
-            // Draws the current frame of the sprite.
-            cat.draw(ctx);
+                // Draws the current frame of the sprite.
+                cat.draw(ctx);
 
-            // Updates the `frameX` property to prepare for the next frame in the sprite sheet.
-            cat.update();
+                // Updates the `frameX` property to prepare for the next frame in the sprite sheet.
+                cat.update();
 
-            // Uses `requestAnimationFrame` to synchronize the animation loop with the display's refresh rate,
+                lastTimestamp = timestamp;
+                }
+        
+                // Uses `requestAnimationFrame` to synchronize the animation loop with the display's refresh rate,
             // ensuring smooth visuals.
             requestAnimationFrame(animate);
         }
